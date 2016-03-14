@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50906E711C9660D800F2C68F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50906E701C9660D800F2C68F /* AppDelegate.swift */; };
+		50906E731C9660D800F2C68F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50906E721C9660D800F2C68F /* ViewController.swift */; };
+		50906E761C9660D800F2C68F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50906E741C9660D800F2C68F /* Main.storyboard */; };
+		50906E781C9660D800F2C68F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50906E771C9660D800F2C68F /* Assets.xcassets */; };
+		50906E7B1C9660D800F2C68F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50906E791C9660D800F2C68F /* LaunchScreen.storyboard */; };
+		50906E861C9660D900F2C68F /* WerdaSkateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50906E851C9660D900F2C68F /* WerdaSkateTests.swift */; };
+		50906E911C9660D900F2C68F /* WerdaSkateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50906E901C9660D900F2C68F /* WerdaSkateUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		50906E821C9660D900F2C68F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50906E651C9660D800F2C68F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50906E6C1C9660D800F2C68F;
+			remoteInfo = WerdaSkate;
+		};
+		50906E8D1C9660D900F2C68F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50906E651C9660D800F2C68F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50906E6C1C9660D800F2C68F;
+			remoteInfo = WerdaSkate;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		50906E6D1C9660D800F2C68F /* WerdaSkate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WerdaSkate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50906E701C9660D800F2C68F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		50906E721C9660D800F2C68F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		50906E751C9660D800F2C68F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		50906E771C9660D800F2C68F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		50906E7A1C9660D800F2C68F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		50906E7C1C9660D800F2C68F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50906E811C9660D900F2C68F /* WerdaSkateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WerdaSkateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50906E851C9660D900F2C68F /* WerdaSkateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WerdaSkateTests.swift; sourceTree = "<group>"; };
+		50906E871C9660D900F2C68F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50906E8C1C9660D900F2C68F /* WerdaSkateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WerdaSkateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50906E901C9660D900F2C68F /* WerdaSkateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WerdaSkateUITests.swift; sourceTree = "<group>"; };
+		50906E921C9660D900F2C68F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50906E6A1C9660D800F2C68F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50906E7E1C9660D900F2C68F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50906E891C9660D900F2C68F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50906E641C9660D800F2C68F = {
+			isa = PBXGroup;
+			children = (
+				50906E6F1C9660D800F2C68F /* WerdaSkate */,
+				50906E841C9660D900F2C68F /* WerdaSkateTests */,
+				50906E8F1C9660D900F2C68F /* WerdaSkateUITests */,
+				50906E6E1C9660D800F2C68F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		50906E6E1C9660D800F2C68F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50906E6D1C9660D800F2C68F /* WerdaSkate.app */,
+				50906E811C9660D900F2C68F /* WerdaSkateTests.xctest */,
+				50906E8C1C9660D900F2C68F /* WerdaSkateUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50906E6F1C9660D800F2C68F /* WerdaSkate */ = {
+			isa = PBXGroup;
+			children = (
+				50906E701C9660D800F2C68F /* AppDelegate.swift */,
+				50906E721C9660D800F2C68F /* ViewController.swift */,
+				50906E741C9660D800F2C68F /* Main.storyboard */,
+				50906E771C9660D800F2C68F /* Assets.xcassets */,
+				50906E791C9660D800F2C68F /* LaunchScreen.storyboard */,
+				50906E7C1C9660D800F2C68F /* Info.plist */,
+			);
+			path = WerdaSkate;
+			sourceTree = "<group>";
+		};
+		50906E841C9660D900F2C68F /* WerdaSkateTests */ = {
+			isa = PBXGroup;
+			children = (
+				50906E851C9660D900F2C68F /* WerdaSkateTests.swift */,
+				50906E871C9660D900F2C68F /* Info.plist */,
+			);
+			path = WerdaSkateTests;
+			sourceTree = "<group>";
+		};
+		50906E8F1C9660D900F2C68F /* WerdaSkateUITests */ = {
+			isa = PBXGroup;
+			children = (
+				50906E901C9660D900F2C68F /* WerdaSkateUITests.swift */,
+				50906E921C9660D900F2C68F /* Info.plist */,
+			);
+			path = WerdaSkateUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50906E6C1C9660D800F2C68F /* WerdaSkate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50906E951C9660D900F2C68F /* Build configuration list for PBXNativeTarget "WerdaSkate" */;
+			buildPhases = (
+				50906E691C9660D800F2C68F /* Sources */,
+				50906E6A1C9660D800F2C68F /* Frameworks */,
+				50906E6B1C9660D800F2C68F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WerdaSkate;
+			productName = WerdaSkate;
+			productReference = 50906E6D1C9660D800F2C68F /* WerdaSkate.app */;
+			productType = "com.apple.product-type.application";
+		};
+		50906E801C9660D900F2C68F /* WerdaSkateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50906E981C9660D900F2C68F /* Build configuration list for PBXNativeTarget "WerdaSkateTests" */;
+			buildPhases = (
+				50906E7D1C9660D900F2C68F /* Sources */,
+				50906E7E1C9660D900F2C68F /* Frameworks */,
+				50906E7F1C9660D900F2C68F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50906E831C9660D900F2C68F /* PBXTargetDependency */,
+			);
+			name = WerdaSkateTests;
+			productName = WerdaSkateTests;
+			productReference = 50906E811C9660D900F2C68F /* WerdaSkateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		50906E8B1C9660D900F2C68F /* WerdaSkateUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50906E9B1C9660D900F2C68F /* Build configuration list for PBXNativeTarget "WerdaSkateUITests" */;
+			buildPhases = (
+				50906E881C9660D900F2C68F /* Sources */,
+				50906E891C9660D900F2C68F /* Frameworks */,
+				50906E8A1C9660D900F2C68F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50906E8E1C9660D900F2C68F /* PBXTargetDependency */,
+			);
+			name = WerdaSkateUITests;
+			productName = WerdaSkateUITests;
+			productReference = 50906E8C1C9660D900F2C68F /* WerdaSkateUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50906E651C9660D800F2C68F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Cristian Martinez Toledo";
+				TargetAttributes = {
+					50906E6C1C9660D800F2C68F = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 37F5PB3WE6;
+					};
+					50906E801C9660D900F2C68F = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 37F5PB3WE6;
+						TestTargetID = 50906E6C1C9660D800F2C68F;
+					};
+					50906E8B1C9660D900F2C68F = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 37F5PB3WE6;
+						TestTargetID = 50906E6C1C9660D800F2C68F;
+					};
+				};
+			};
+			buildConfigurationList = 50906E681C9660D800F2C68F /* Build configuration list for PBXProject "WerdaSkate" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 50906E641C9660D800F2C68F;
+			productRefGroup = 50906E6E1C9660D800F2C68F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50906E6C1C9660D800F2C68F /* WerdaSkate */,
+				50906E801C9660D900F2C68F /* WerdaSkateTests */,
+				50906E8B1C9660D900F2C68F /* WerdaSkateUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50906E6B1C9660D800F2C68F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50906E7B1C9660D800F2C68F /* LaunchScreen.storyboard in Resources */,
+				50906E781C9660D800F2C68F /* Assets.xcassets in Resources */,
+				50906E761C9660D800F2C68F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50906E7F1C9660D900F2C68F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50906E8A1C9660D900F2C68F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50906E691C9660D800F2C68F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50906E731C9660D800F2C68F /* ViewController.swift in Sources */,
+				50906E711C9660D800F2C68F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50906E7D1C9660D900F2C68F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50906E861C9660D900F2C68F /* WerdaSkateTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50906E881C9660D900F2C68F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50906E911C9660D900F2C68F /* WerdaSkateUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		50906E831C9660D900F2C68F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50906E6C1C9660D800F2C68F /* WerdaSkate */;
+			targetProxy = 50906E821C9660D900F2C68F /* PBXContainerItemProxy */;
+		};
+		50906E8E1C9660D900F2C68F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50906E6C1C9660D800F2C68F /* WerdaSkate */;
+			targetProxy = 50906E8D1C9660D900F2C68F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		50906E741C9660D800F2C68F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50906E751C9660D800F2C68F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		50906E791C9660D800F2C68F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50906E7A1C9660D800F2C68F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		50906E931C9660D900F2C68F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		50906E941C9660D900F2C68F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		50906E961C9660D900F2C68F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WerdaSkate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cmt.cl.WerdaSkate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		50906E971C9660D900F2C68F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WerdaSkate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cmt.cl.WerdaSkate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		50906E991C9660D900F2C68F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WerdaSkateTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cmt.cl.WerdaSkateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WerdaSkate.app/WerdaSkate";
+			};
+			name = Debug;
+		};
+		50906E9A1C9660D900F2C68F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WerdaSkateTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cmt.cl.WerdaSkateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WerdaSkate.app/WerdaSkate";
+			};
+			name = Release;
+		};
+		50906E9C1C9660D900F2C68F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WerdaSkateUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cmt.cl.WerdaSkateUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WerdaSkate;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		50906E9D1C9660D900F2C68F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WerdaSkateUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cmt.cl.WerdaSkateUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WerdaSkate;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50906E681C9660D800F2C68F /* Build configuration list for PBXProject "WerdaSkate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50906E931C9660D900F2C68F /* Debug */,
+				50906E941C9660D900F2C68F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50906E951C9660D900F2C68F /* Build configuration list for PBXNativeTarget "WerdaSkate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50906E961C9660D900F2C68F /* Debug */,
+				50906E971C9660D900F2C68F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		50906E981C9660D900F2C68F /* Build configuration list for PBXNativeTarget "WerdaSkateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50906E991C9660D900F2C68F /* Debug */,
+				50906E9A1C9660D900F2C68F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		50906E9B1C9660D900F2C68F /* Build configuration list for PBXNativeTarget "WerdaSkateUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50906E9C1C9660D900F2C68F /* Debug */,
+				50906E9D1C9660D900F2C68F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 50906E651C9660D800F2C68F /* Project object */;
+}
