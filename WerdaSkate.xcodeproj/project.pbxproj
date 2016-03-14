@@ -14,6 +14,7 @@
 		50906E7B1C9660D800F2C68F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50906E791C9660D800F2C68F /* LaunchScreen.storyboard */; };
 		50906E861C9660D900F2C68F /* WerdaSkateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50906E851C9660D900F2C68F /* WerdaSkateTests.swift */; };
 		50906E911C9660D900F2C68F /* WerdaSkateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50906E901C9660D900F2C68F /* WerdaSkateUITests.swift */; };
+		97EB00CB015D82CA11C4A646 /* Pods_WerdaSkate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45D87512659ABCC57FC770AF /* Pods_WerdaSkate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		45D87512659ABCC57FC770AF /* Pods_WerdaSkate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WerdaSkate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50906E6D1C9660D800F2C68F /* WerdaSkate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WerdaSkate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50906E701C9660D800F2C68F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50906E721C9660D800F2C68F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		50906E8C1C9660D900F2C68F /* WerdaSkateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WerdaSkateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50906E901C9660D900F2C68F /* WerdaSkateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WerdaSkateUITests.swift; sourceTree = "<group>"; };
 		50906E921C9660D900F2C68F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DD83FE90524BB5DD2C7B9A5 /* Pods-WerdaSkate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WerdaSkate.release.xcconfig"; path = "Pods/Target Support Files/Pods-WerdaSkate/Pods-WerdaSkate.release.xcconfig"; sourceTree = "<group>"; };
+		7644B2CC20622AA8295D3B31 /* Pods-WerdaSkate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WerdaSkate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WerdaSkate/Pods-WerdaSkate.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97EB00CB015D82CA11C4A646 /* Pods_WerdaSkate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,8 @@
 				50906E841C9660D900F2C68F /* WerdaSkateTests */,
 				50906E8F1C9660D900F2C68F /* WerdaSkateUITests */,
 				50906E6E1C9660D800F2C68F /* Products */,
+				AF5B583A8355F178490533E9 /* Pods */,
+				6795E4B223EFF9876364FF01 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +132,23 @@
 			path = WerdaSkateUITests;
 			sourceTree = "<group>";
 		};
+		6795E4B223EFF9876364FF01 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45D87512659ABCC57FC770AF /* Pods_WerdaSkate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF5B583A8355F178490533E9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7644B2CC20622AA8295D3B31 /* Pods-WerdaSkate.debug.xcconfig */,
+				5DD83FE90524BB5DD2C7B9A5 /* Pods-WerdaSkate.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50906E951C9660D900F2C68F /* Build configuration list for PBXNativeTarget "WerdaSkate" */;
 			buildPhases = (
+				DABAFB6A2DA6AEF59597827D /* Check Pods Manifest.lock */,
 				50906E691C9660D800F2C68F /* Sources */,
 				50906E6A1C9660D800F2C68F /* Frameworks */,
 				50906E6B1C9660D800F2C68F /* Resources */,
+				4D032588A889DB62B52F1F0D /* Embed Pods Frameworks */,
+				03309223A177A9083A98D9E6 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +280,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03309223A177A9083A98D9E6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WerdaSkate/Pods-WerdaSkate-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D032588A889DB62B52F1F0D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WerdaSkate/Pods-WerdaSkate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DABAFB6A2DA6AEF59597827D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		50906E691C9660D800F2C68F /* Sources */ = {
@@ -400,6 +475,7 @@
 		};
 		50906E961C9660D900F2C68F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7644B2CC20622AA8295D3B31 /* Pods-WerdaSkate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WerdaSkate/Info.plist;
@@ -411,6 +487,7 @@
 		};
 		50906E971C9660D900F2C68F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DD83FE90524BB5DD2C7B9A5 /* Pods-WerdaSkate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WerdaSkate/Info.plist;
@@ -487,6 +564,7 @@
 				50906E971C9660D900F2C68F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		50906E981C9660D900F2C68F /* Build configuration list for PBXNativeTarget "WerdaSkateTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +573,7 @@
 				50906E9A1C9660D900F2C68F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		50906E9B1C9660D900F2C68F /* Build configuration list for PBXNativeTarget "WerdaSkateUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +582,7 @@
 				50906E9D1C9660D900F2C68F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
