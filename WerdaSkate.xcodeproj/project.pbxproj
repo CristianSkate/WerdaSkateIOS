@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		503AAFFE1C98B39700719232 /* CeldaMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503AAFFD1C98B39700719232 /* CeldaMenuTableViewCell.swift */; };
 		50906E711C9660D800F2C68F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50906E701C9660D800F2C68F /* AppDelegate.swift */; };
 		50906E731C9660D800F2C68F /* InicioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50906E721C9660D800F2C68F /* InicioViewController.swift */; };
 		50906E761C9660D800F2C68F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50906E741C9660D800F2C68F /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		45D87512659ABCC57FC770AF /* Pods_WerdaSkate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WerdaSkate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		503AAFFD1C98B39700719232 /* CeldaMenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CeldaMenuTableViewCell.swift; sourceTree = "<group>"; };
 		50906E6D1C9660D800F2C68F /* WerdaSkate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WerdaSkate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50906E701C9660D800F2C68F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50906E721C9660D800F2C68F /* InicioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioViewController.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 		50D2BDE41C97386900FBBBCD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				503AAFFD1C98B39700719232 /* CeldaMenuTableViewCell.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 				50906E731C9660D800F2C68F /* InicioViewController.swift in Sources */,
 				50D2BDE61C97388300FBBBCD /* MenuViewController.swift in Sources */,
 				50906E711C9660D800F2C68F /* AppDelegate.swift in Sources */,
+				503AAFFE1C98B39700719232 /* CeldaMenuTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

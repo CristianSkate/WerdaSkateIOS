@@ -1,0 +1,25 @@
+//
+//  CeldaMenuTableViewCell.swift
+//  WerdaSkate
+//
+//  Created by Cristian Martinez Toledo on 15-03-16.
+//  Copyright © 2016 Cristian Martinez Toledo. All rights reserved.
+//
+
+import UIKit
+
+class CeldaMenuTableViewCell: UITableViewCell {
+
+    @IBOutlet weak var txtTituloOp: UILabel!
+    @IBOutlet weak var imgMenu: UIImageView!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+
+    }
+
+    override func setSelected(selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+    }
+
+}
