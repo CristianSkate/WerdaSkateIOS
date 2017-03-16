@@ -15,15 +15,15 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var tblMenu: UITableView!
     
     let menuOps:[String] = ["Inicio","Mis Encuestas","Mis Evaluadores","Misión","Orgánica","Doctrina","Herramientas","Acerca de", "Cerrar Sesión"]
-    //let imgMenu:[UIImage] = [UIImage(named: "ic_home")!,UIImage(named: "ic_supervisor_account_black_48dp")!,UIImage(named: "ic_supervisor_account_black_48dp")!,UIImage(named: "ic_thumb_up_black_48dp")!,UIImage(named: "ic_domain_black_48dp")!,UIImage(named: "ic_school_black_48dp")!,UIImage(named: "ic_settings_black_48dp")!,UIImage(named: "ic_action_about")!,UIImage(named: "ic_lock_power_off")!]
+    let imgMenu:[UIImage] = [UIImage(named: "ic_home")!,UIImage(named: "ic_social")!,UIImage(named: "ic_like")!,UIImage(named: "ic_map")!,UIImage(named: "ic_settings")!,UIImage(named: "ic_map")!,UIImage(named: "ic_social")!,UIImage(named: "ic_about")!,UIImage(named: "ic_cerrar_sesion")!]
     
     override func viewDidLoad() {
         super.viewDidLoad()
     
         self.navigationController?.navigationBar.barTintColor =  UIColor(red: 0.0/255.0, green: 154.0/255.0, blue: 255.0/255.0, alpha: 1.0)
-        self.navigationController?.navigationBar.translucent =  false
-        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
-        self.navigationController?.navigationBar.barStyle = .Black
+        self.navigationController?.navigationBar.isTranslucent =  false
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
+        self.navigationController?.navigationBar.barStyle = .black
         tblMenu.delegate = self
         tblMenu.dataSource =  self
         configureScrollView()
@@ -44,30 +44,30 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
         
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return menuOps.count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let mycell = tableView.dequeueReusableCellWithIdentifier("celdaMenu", forIndexPath: indexPath) as! CeldaMenuTableViewCell
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let mycell = tableView.dequeueReusableCell(withIdentifier: "celdaMenu", for: indexPath) as! CeldaMenuTableViewCell
         
         mycell.txtTituloOp.text = menuOps[indexPath.row]
-        //mycell.imgMenu.image =  imgMenu[indexPath.row]
+        mycell.imgMenu.image =  imgMenu[indexPath.row]
         
         return mycell
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        switch(indexPath.row){
+        switch((indexPath as NSIndexPath).row){
         case 0:
             //Home
-            let centerViewController = self.storyboard?.instantiateViewControllerWithIdentifier("InicioViewController") as! InicioViewController
+            let centerViewController = self.storyboard?.instantiateViewController(withIdentifier: "InicioViewController") as! InicioViewController
             let centerNavController = UINavigationController(rootViewController: centerViewController)
-            let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+            let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
             
             appDelegate.centerContainer!.centerViewController =  centerNavController
-            appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
+            appDelegate.centerContainer!.toggle(MMDrawerSide.left, animated: true, completion: nil)
             
             break
             
@@ -183,19 +183,19 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
             break
             
         default:
-            let centerViewController = self.storyboard?.instantiateViewControllerWithIdentifier("InicioViewController") as! InicioViewController
+            let centerViewController = self.storyboard?.instantiateViewController(withIdentifier: "InicioViewController") as! InicioViewController
             let centerNavController = UINavigationController(rootViewController: centerViewController)
-            let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+            let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
             
             appDelegate.centerContainer!.centerViewController =  centerNavController
-            appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
+            appDelegate.centerContainer!.toggle(MMDrawerSide.left, animated: true, completion: nil)
             
             break
             
         }
         
         
-        tblMenu.deselectRowAtIndexPath(indexPath, animated: true)
+        tblMenu.deselectRow(at: indexPath, animated: true)
         
     }
 
