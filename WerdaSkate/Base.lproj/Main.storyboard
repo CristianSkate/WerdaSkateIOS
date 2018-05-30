@@ -49,11 +49,11 @@
                                                 <constraint firstAttribute="bottomMargin" secondItem="zVa-7a-fJ8" secondAttribute="bottom" constant="1" id="VWE-pa-fwT"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="zVa-7a-fJ8" secondAttribute="trailing" id="eiM-iB-fcF"/>
                                                 <constraint firstItem="gBv-Po-JFS" firstAttribute="leading" secondItem="Aah-j7-Adl" secondAttribute="leading" constant="5" id="gPk-Ab-YEK"/>
-                                                <constraint firstItem="9sZ-ka-XQq" firstAttribute="leading" secondItem="Aah-j7-Adl" secondAttribute="leadingMargin" id="hmv-Os-Gf5"/>
+                                                <constraint firstItem="9sZ-ka-XQq" firstAttribute="leading" secondItem="Aah-j7-Adl" secondAttribute="leading" constant="5" id="hmv-Os-Gf5"/>
                                                 <constraint firstItem="gBv-Po-JFS" firstAttribute="top" secondItem="Aah-j7-Adl" secondAttribute="top" constant="1" id="qQ1-XB-MBg"/>
-                                                <constraint firstItem="9sZ-ka-XQq" firstAttribute="top" secondItem="Aah-j7-Adl" secondAttribute="topMargin" id="sbh-mQ-oaX"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="9sZ-ka-XQq" secondAttribute="trailing" id="upy-d5-AWh"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="9sZ-ka-XQq" secondAttribute="bottom" id="vpm-Lv-yLZ"/>
+                                                <constraint firstItem="9sZ-ka-XQq" firstAttribute="top" secondItem="Aah-j7-Adl" secondAttribute="top" constant="3" id="sbh-mQ-oaX"/>
+                                                <constraint firstAttribute="trailing" secondItem="9sZ-ka-XQq" secondAttribute="trailing" constant="5" id="upy-d5-AWh"/>
+                                                <constraint firstAttribute="bottom" secondItem="9sZ-ka-XQq" secondAttribute="bottom" constant="3" id="vpm-Lv-yLZ"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
