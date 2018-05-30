@@ -15,6 +15,7 @@
 		50906E7B1C9660D800F2C68F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50906E791C9660D800F2C68F /* LaunchScreen.storyboard */; };
 		50906E861C9660D900F2C68F /* WerdaSkateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50906E851C9660D900F2C68F /* WerdaSkateTests.swift */; };
 		50906E911C9660D900F2C68F /* WerdaSkateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50906E901C9660D900F2C68F /* WerdaSkateUITests.swift */; };
+		50AC614720BE4DA100858F4F /* CeldaNoticiasTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AC614620BE4DA100858F4F /* CeldaNoticiasTableViewCell.swift */; };
 		50D2BDDE1C970D1E00FBBBCD /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D2BDDD1C970D1E00FBBBCD /* ObjectMapper.framework */; };
 		50D2BDE61C97388300FBBBCD /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D2BDE51C97388300FBBBCD /* MenuViewController.swift */; };
 		50D2BDE81C974DCE00FBBBCD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D2BDE71C974DCE00FBBBCD /* LoginViewController.swift */; };
@@ -54,6 +55,7 @@
 		50906E8C1C9660D900F2C68F /* WerdaSkateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WerdaSkateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50906E901C9660D900F2C68F /* WerdaSkateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WerdaSkateUITests.swift; sourceTree = "<group>"; };
 		50906E921C9660D900F2C68F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50AC614620BE4DA100858F4F /* CeldaNoticiasTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CeldaNoticiasTableViewCell.swift; sourceTree = "<group>"; };
 		50D2BDDD1C970D1E00FBBBCD /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = "Pods/../build/Release-iphoneos/ObjectMapper.framework"; sourceTree = "<group>"; };
 		50D2BDE21C97154500FBBBCD /* WerdaSkate-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WerdaSkate-Bridging-Header.h"; sourceTree = "<group>"; };
 		50D2BDE51C97388300FBBBCD /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				503AAFFD1C98B39700719232 /* CeldaMenuTableViewCell.swift */,
+				50AC614620BE4DA100858F4F /* CeldaNoticiasTableViewCell.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50AC614720BE4DA100858F4F /* CeldaNoticiasTableViewCell.swift in Sources */,
 				50D2BDE81C974DCE00FBBBCD /* LoginViewController.swift in Sources */,
 				50906E731C9660D800F2C68F /* InicioViewController.swift in Sources */,
 				50D2BDE61C97388300FBBBCD /* MenuViewController.swift in Sources */,

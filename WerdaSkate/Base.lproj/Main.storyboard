@@ -19,8 +19,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RlI-cf-EaV">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RlI-cf-EaV">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="celdaNoticia" rowHeight="100" id="G5t-ZT-H0B" customClass="CeldaNoticiasTableViewCell" customModule="WerdaSkate" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="92" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="G5t-ZT-H0B" id="Aah-j7-Adl">
+                                            <frame key="frameInset" width="375" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9sZ-ka-XQq">
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gBv-Po-JFS">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="100" id="ltn-na-Ud2"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do " textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zVa-7a-fJ8">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="gBv-Po-JFS" secondAttribute="bottom" constant="1" id="8rd-iW-cJ3"/>
+                                                <constraint firstItem="zVa-7a-fJ8" firstAttribute="leading" secondItem="gBv-Po-JFS" secondAttribute="trailing" constant="5" id="AUT-Xn-RBW"/>
+                                                <constraint firstItem="zVa-7a-fJ8" firstAttribute="top" secondItem="Aah-j7-Adl" secondAttribute="topMargin" id="I6V-4N-gRd"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="zVa-7a-fJ8" secondAttribute="bottom" constant="1" id="VWE-pa-fwT"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="zVa-7a-fJ8" secondAttribute="trailing" id="eiM-iB-fcF"/>
+                                                <constraint firstItem="gBv-Po-JFS" firstAttribute="leading" secondItem="Aah-j7-Adl" secondAttribute="leading" constant="5" id="gPk-Ab-YEK"/>
+                                                <constraint firstItem="9sZ-ka-XQq" firstAttribute="leading" secondItem="Aah-j7-Adl" secondAttribute="leadingMargin" id="hmv-Os-Gf5"/>
+                                                <constraint firstItem="gBv-Po-JFS" firstAttribute="top" secondItem="Aah-j7-Adl" secondAttribute="top" constant="1" id="qQ1-XB-MBg"/>
+                                                <constraint firstItem="9sZ-ka-XQq" firstAttribute="top" secondItem="Aah-j7-Adl" secondAttribute="topMargin" id="sbh-mQ-oaX"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="9sZ-ka-XQq" secondAttribute="trailing" id="upy-d5-AWh"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="9sZ-ka-XQq" secondAttribute="bottom" id="vpm-Lv-yLZ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="cardView" destination="9sZ-ka-XQq" id="NvJ-ff-gmY"/>
+                                            <outlet property="imgNoticia" destination="gBv-Po-JFS" id="wTf-Tp-elg"/>
+                                            <outlet property="txtNoticia" destination="zVa-7a-fJ8" id="e7n-X6-k3b"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -28,7 +70,7 @@
                             <constraint firstAttribute="trailing" secondItem="RlI-cf-EaV" secondAttribute="trailing" id="6Vr-fl-GRq"/>
                             <constraint firstItem="RlI-cf-EaV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7nt-ER-1rU"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="RlI-cf-EaV" secondAttribute="bottom" id="B6D-Iq-oAh"/>
-                            <constraint firstItem="RlI-cf-EaV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="U5M-8a-rFz"/>
+                            <constraint firstItem="RlI-cf-EaV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="vOu-yQ-WoU"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="u5z-29-iR9"/>
