@@ -14,7 +14,7 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBOutlet weak var tblMenu: UITableView!
     
-    let menuOps:[String] = ["Inicio","Mapa","Spotline","Contactos","Herramientas","Acerca de", "Cerrar Sesión"]
+    let menuOps:[String] = ["Noticias","Mapa","Spotline","Contactos","Herramientas","Acerca de", "Cerrar Sesión"]
     let imgMenu:[UIImage] = [UIImage(named: "ic_home")!,UIImage(named: "ic_map")!,UIImage(named: "ic_like")!,UIImage(named: "ic_social")!,UIImage(named: "ic_settings")!,UIImage(named: "ic_about")!,UIImage(named: "ic_cerrar_sesion")!]
     
     override func viewDidLoad() {
