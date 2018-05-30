@@ -11,11 +11,11 @@ import MMDrawerController
 
 class MenuViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    @IBOutlet weak var scrollView: UIScrollView!
+    
     @IBOutlet weak var tblMenu: UITableView!
     
-    let menuOps:[String] = ["Inicio","Mis Encuestas","Mis Evaluadores","Misión","Orgánica","Doctrina","Herramientas","Acerca de", "Cerrar Sesión"]
-    let imgMenu:[UIImage] = [UIImage(named: "ic_home")!,UIImage(named: "ic_social")!,UIImage(named: "ic_like")!,UIImage(named: "ic_map")!,UIImage(named: "ic_settings")!,UIImage(named: "ic_map")!,UIImage(named: "ic_social")!,UIImage(named: "ic_about")!,UIImage(named: "ic_cerrar_sesion")!]
+    let menuOps:[String] = ["Inicio","Mapa","Spotline","Contactos","Herramientas","Acerca de", "Cerrar Sesión"]
+    let imgMenu:[UIImage] = [UIImage(named: "ic_home")!,UIImage(named: "ic_map")!,UIImage(named: "ic_like")!,UIImage(named: "ic_social")!,UIImage(named: "ic_settings")!,UIImage(named: "ic_about")!,UIImage(named: "ic_cerrar_sesion")!]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,22 +26,13 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.navigationController?.navigationBar.barStyle = .black
         tblMenu.delegate = self
         tblMenu.dataSource =  self
-        configureScrollView()
+        
 
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    func configureScrollView(){
-        
-        let contentSize = scrollView.sizeThatFits(scrollView.bounds.size)
-        var frame = scrollView.frame
-        frame.size.height = contentSize.height
-        scrollView.contentSize.height = frame.size.height
-        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -53,6 +44,8 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         mycell.txtTituloOp.text = menuOps[indexPath.row]
         mycell.imgMenu.image =  imgMenu[indexPath.row]
+        
+        configureCardView(cardView: mycell.cardView)
         
         return mycell
     }
@@ -196,6 +189,20 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         
         tblMenu.deselectRow(at: indexPath, animated: true)
+        
+    }
+    
+    func configureCardView(cardView:UIView){
+        
+        let contentSize = cardView.sizeThatFits(cardView.bounds.size)
+        var frame = cardView.frame
+        frame.size.height = contentSize.height
+        cardView.frame = frame
+        cardView.layer.cornerRadius = 3.0
+        cardView.layer.masksToBounds = false
+        cardView.layer.shadowOffset = CGSize(width: 0, height: 0)
+        cardView.layer.shadowOpacity = 0.8
+        cardView.layer.shadowColor = UIColor.black.withAlphaComponent(0.2).cgColor
         
     }
 

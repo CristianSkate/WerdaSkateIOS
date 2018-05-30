@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="N4M-fQ-rwZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="17E202" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="N4M-fQ-rwZ">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -70,76 +70,71 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XcE-HE-M08">
-                                <frame key="frameInset" width="600" height="600"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="0wK-K4-7jq">
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="hso-nM-VsL"/>
-                                        </constraints>
-                                    </imageView>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TIB-sv-zHx">
-                                        <rect key="frame" x="0.0" y="108" width="376" height="492"/>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="celdaMenu" id="i6L-yU-w1o" customClass="CeldaMenuTableViewCell" customModule="WerdaSkate" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="28" width="376" height="44"/>
-                                                <autoresizingMask key="autoresizingMask"/>
-                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="i6L-yU-w1o" id="U1r-RI-pLx">
-                                                    <frame key="frameInset" width="376" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V09-Gn-jT0">
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cqT-B4-3KT">
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" constant="36" id="o0q-w6-ZHd"/>
-                                                            </constraints>
-                                                        </imageView>
-                                                    </subviews>
-                                                    <constraints>
-                                                        <constraint firstItem="cqT-B4-3KT" firstAttribute="top" secondItem="U1r-RI-pLx" secondAttribute="topMargin" constant="-5" id="4dD-Gr-EdD"/>
-                                                        <constraint firstItem="V09-Gn-jT0" firstAttribute="centerY" secondItem="cqT-B4-3KT" secondAttribute="centerY" id="JRf-nZ-DKX"/>
-                                                        <constraint firstItem="V09-Gn-jT0" firstAttribute="leading" secondItem="cqT-B4-3KT" secondAttribute="trailing" constant="8" symbolic="YES" id="Rz6-vj-rJJ"/>
-                                                        <constraint firstItem="cqT-B4-3KT" firstAttribute="leading" secondItem="U1r-RI-pLx" secondAttribute="leadingMargin" id="dCh-9s-otH"/>
-                                                        <constraint firstItem="V09-Gn-jT0" firstAttribute="trailing" secondItem="U1r-RI-pLx" secondAttribute="trailingMargin" id="fqR-Gv-tMF"/>
-                                                        <constraint firstItem="cqT-B4-3KT" firstAttribute="centerY" secondItem="U1r-RI-pLx" secondAttribute="centerY" id="t7V-hu-iOb"/>
-                                                    </constraints>
-                                                </tableViewCellContentView>
-                                                <connections>
-                                                    <outlet property="imgMenu" destination="cqT-B4-3KT" id="8KK-ju-F3O"/>
-                                                    <outlet property="txtTituloOp" destination="V09-Gn-jT0" id="TaZ-UP-Nfr"/>
-                                                </connections>
-                                            </tableViewCell>
-                                        </prototypes>
-                                    </tableView>
-                                </subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="0wK-K4-7jq">
                                 <constraints>
-                                    <constraint firstItem="0wK-K4-7jq" firstAttribute="top" secondItem="XcE-HE-M08" secondAttribute="top" id="1P6-Oz-GFD"/>
-                                    <constraint firstItem="TIB-sv-zHx" firstAttribute="top" secondItem="0wK-K4-7jq" secondAttribute="bottom" constant="8" id="7q9-4l-C9i"/>
-                                    <constraint firstItem="0wK-K4-7jq" firstAttribute="width" secondItem="XcE-HE-M08" secondAttribute="width" id="8dH-m9-xaW"/>
-                                    <constraint firstItem="TIB-sv-zHx" firstAttribute="leading" secondItem="XcE-HE-M08" secondAttribute="leading" id="EsA-cq-fj8"/>
-                                    <constraint firstItem="0wK-K4-7jq" firstAttribute="leading" secondItem="XcE-HE-M08" secondAttribute="leading" id="Xtt-zi-ErF"/>
-                                    <constraint firstAttribute="bottom" secondItem="TIB-sv-zHx" secondAttribute="bottom" id="rWA-6s-sgH"/>
-                                    <constraint firstItem="TIB-sv-zHx" firstAttribute="top" secondItem="0wK-K4-7jq" secondAttribute="bottom" constant="8" id="vDU-9v-1Mt"/>
+                                    <constraint firstAttribute="height" constant="100" id="hso-nM-VsL"/>
                                 </constraints>
-                            </scrollView>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TIB-sv-zHx">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="celdaMenu" id="i6L-yU-w1o" customClass="CeldaMenuTableViewCell" customModule="WerdaSkate" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="376" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="i6L-yU-w1o" id="U1r-RI-pLx">
+                                            <frame key="frameInset" width="376" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WaD-pl-nAS" userLabel="Card View">
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V09-Gn-jT0">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cqT-B4-3KT">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="36" id="o0q-w6-ZHd"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="cqT-B4-3KT" firstAttribute="top" secondItem="U1r-RI-pLx" secondAttribute="topMargin" constant="-5" id="4dD-Gr-EdD"/>
+                                                <constraint firstAttribute="trailing" secondItem="WaD-pl-nAS" secondAttribute="trailing" constant="4" id="8Fy-xm-NiG"/>
+                                                <constraint firstItem="WaD-pl-nAS" firstAttribute="leading" secondItem="U1r-RI-pLx" secondAttribute="leading" constant="4" id="GKe-iS-bir"/>
+                                                <constraint firstItem="V09-Gn-jT0" firstAttribute="centerY" secondItem="cqT-B4-3KT" secondAttribute="centerY" id="JRf-nZ-DKX"/>
+                                                <constraint firstItem="V09-Gn-jT0" firstAttribute="leading" secondItem="cqT-B4-3KT" secondAttribute="trailing" constant="8" symbolic="YES" id="Rz6-vj-rJJ"/>
+                                                <constraint firstAttribute="bottom" secondItem="WaD-pl-nAS" secondAttribute="bottom" constant="2" id="byv-C4-1VN"/>
+                                                <constraint firstItem="cqT-B4-3KT" firstAttribute="leading" secondItem="U1r-RI-pLx" secondAttribute="leadingMargin" id="dCh-9s-otH"/>
+                                                <constraint firstItem="V09-Gn-jT0" firstAttribute="trailing" secondItem="U1r-RI-pLx" secondAttribute="trailingMargin" id="fqR-Gv-tMF"/>
+                                                <constraint firstItem="cqT-B4-3KT" firstAttribute="centerY" secondItem="U1r-RI-pLx" secondAttribute="centerY" id="t7V-hu-iOb"/>
+                                                <constraint firstItem="WaD-pl-nAS" firstAttribute="top" secondItem="U1r-RI-pLx" secondAttribute="top" constant="2" id="tIk-eu-0ja"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="cardView" destination="WaD-pl-nAS" id="IRM-Bn-E94"/>
+                                            <outlet property="imgMenu" destination="cqT-B4-3KT" id="8KK-ju-F3O"/>
+                                            <outlet property="txtTituloOp" destination="V09-Gn-jT0" id="TaZ-UP-Nfr"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="XcE-HE-M08" firstAttribute="centerX" secondItem="5zK-Pc-Dcb" secondAttribute="centerX" id="357-Tf-yFU"/>
-                            <constraint firstItem="XcE-HE-M08" firstAttribute="centerY" secondItem="5zK-Pc-Dcb" secondAttribute="centerY" id="NgY-Ek-leD"/>
-                            <constraint firstItem="XcE-HE-M08" firstAttribute="height" secondItem="5zK-Pc-Dcb" secondAttribute="height" id="RLb-3D-MaS"/>
-                            <constraint firstItem="XcE-HE-M08" firstAttribute="width" secondItem="5zK-Pc-Dcb" secondAttribute="width" id="mJX-yj-MjP"/>
+                            <constraint firstItem="0wK-K4-7jq" firstAttribute="top" secondItem="b3s-KC-kw2" secondAttribute="bottom" id="2K0-2a-clf"/>
+                            <constraint firstItem="TIB-sv-zHx" firstAttribute="top" secondItem="0wK-K4-7jq" secondAttribute="bottom" constant="1" id="5id-tf-r2i"/>
+                            <constraint firstItem="dX7-RI-hQ6" firstAttribute="top" secondItem="TIB-sv-zHx" secondAttribute="bottom" constant="3" id="HgF-w8-Jrq"/>
+                            <constraint firstItem="TIB-sv-zHx" firstAttribute="leading" secondItem="5zK-Pc-Dcb" secondAttribute="leading" id="JoR-pN-LCg"/>
+                            <constraint firstItem="0wK-K4-7jq" firstAttribute="width" secondItem="5zK-Pc-Dcb" secondAttribute="width" id="VE2-q4-Au7"/>
+                            <constraint firstAttribute="trailing" secondItem="TIB-sv-zHx" secondAttribute="trailing" constant="-1" id="qCE-OI-i1S"/>
+                            <constraint firstItem="0wK-K4-7jq" firstAttribute="centerX" secondItem="5zK-Pc-Dcb" secondAttribute="centerX" id="rSJ-q0-ve7"/>
                         </constraints>
                     </view>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
-                        <outlet property="scrollView" destination="XcE-HE-M08" id="So5-Fi-ifI"/>
                         <outlet property="tblMenu" destination="TIB-sv-zHx" id="rz7-oD-guc"/>
                     </connections>
                 </viewController>
